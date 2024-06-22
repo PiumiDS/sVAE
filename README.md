@@ -12,7 +12,7 @@ Our dataset consists of 18 TMA slide with each having 9 channels corresponding t
 ![TMA core magnified view and 9 channels](image_patches.jpg)
 
 ### Architecture diagram is shown below
-![Architecture of semisupervised VAE model](cvar_diagram.jpg)
+![Architecture of semisupervised VAE model](cvae_diagram.jpg)
 
 ### Comparison of Cell Classification Results for Different Models
 | Method | Image Size | Embedding Size | Accuracy | Precision | Recall |
@@ -33,7 +33,7 @@ To replicate the experiments, follow the steps below to set up your environment:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repo/cell-feature-extraction.git
+   git clone https://github.com/PiumiDS/sVAE.git
    ```
 
 2. **Create a virtual environment**
@@ -43,12 +43,13 @@ To replicate the experiments, follow the steps below to set up your environment:
    ```
 
 3. **Install the dependencies**
+   The requirements file contains multiple libraries that are used for multiple experiments. You MUST double check if the libraries are necessary for this code or not. 
    ```bash
    pip install -r requirements.txt
    ```
 
 ### Data Preparation
-For our experiment mIF images and the corresponding labels are placed as below. SInce the paths are provided in .npy files, you can change the parametrs as necessary to read files.
+For our experiment mIF images and the corresponding labels are placed as below. Since the paths are provided in .npy files, you can change the parametrs as necessary to read files.
 ```
 data/
 └── tmAs/
